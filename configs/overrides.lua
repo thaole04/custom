@@ -52,10 +52,10 @@ M.nvimtree = {
   },
 
   renderer = {
-    highlight_git = true,
+    highlight_git = false,
     icons = {
       show = {
-        git = true,
+        git = false,
       },
     },
   },

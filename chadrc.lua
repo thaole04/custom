@@ -5,8 +5,8 @@ vim.o.scrolloff = 13
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "gruvbox",
-  theme_toggle = { "gruvbox", "rosepine" },
+  theme = "everforest",
+  theme_toggle = { "everforest", "rosepine" },
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
