@@ -5,27 +5,27 @@ vim.o.scrolloff = 13
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "gruvbox",
-  theme_toggle = { "gruvbox", "rosepine" },
+  theme = "chadracula",
+  theme_toggle = { "chadracula", "rosepine" },
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
   statusline = {
-    theme = "default", -- default/vscode/vscode_colored/minimal
+    theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "block",
+    separator_style = "default",
     overriden_modules = nil,
   },
   tabufline = {
     show_numbers = false,
     enabled = true,
     lazyload = false,
-    overriden_modules = function (modules)
-      modules[4] = (function ()
+    overriden_modules = function(modules)
+      modules[4] = (function()
         return "Thao "
       end)()
-    end
+    end,
   },
   nvdash = {
     load_on_startup = true,

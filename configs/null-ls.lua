@@ -16,7 +16,7 @@ local sources = {
   b.diagnostics.shellcheck.with { filetypes = { "sh", "zsh" } },
 
 
-  -- cpp
+  -- cpp and c
   b.formatting.clang_format,
 
   -- python

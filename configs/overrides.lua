@@ -52,10 +52,10 @@ M.nvimtree = {
   },
 
   renderer = {
-    highlight_git = true,
+    highlight_git = false,
     icons = {
       show = {
-        git = true,
+        git = false,
       },
     },
   },
@@ -91,4 +91,8 @@ M.nvterm = {
   },
 }
 
+-- overrides gitsigns
+M.gitsigns = {
+
+}
 return M

@@ -19,7 +19,8 @@ local plugins = {
     dependencies = {
       -- format & linting
       {
-        "jose-elias-alvarez/null-ls.nvim",
+        -- "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         config = function()
           require "custom.configs.null-ls"
         end,
@@ -57,25 +58,6 @@ local plugins = {
     event = "InsertEnter",
     config = function()
       require("better_escape").setup()
-    end,
-  },
-  -- noice
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {
-      -- add any options here
-    },
-    dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
-    },
-    config = function()
-      require "custom.configs.noice"
     end,
   },
   -- install indent line
