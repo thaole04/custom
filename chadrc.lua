@@ -5,13 +5,8 @@ vim.o.scrolloff = 13
 local highlights = require "custom.highlights"
 
 M.ui = {
-<<<<<<< HEAD
-  theme = "chadracula",
-  theme_toggle = { "chadracula", "rosepine" },
-=======
   theme = "everforest",
   theme_toggle = { "everforest", "rosepine" },
->>>>>>> e4266367dc0d84ac334ccd167dec009688739a3d
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,

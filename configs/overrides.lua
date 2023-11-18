@@ -85,6 +85,6 @@ M.nvterm = {
 
 -- overrides gitsigns
 M.gitsigns = {
-
+  enabled = false,
 }
 return M
