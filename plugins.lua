@@ -4,13 +4,41 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
+  -- noice
+  -- lazy.nvim
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    config = function()
+      require "custom.configs.noice_temp"
+    end,
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
+  },
+  -- nvim-notify
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      -- add any options here
+      -- background_colour = "#000000",
+    },
+  },
   -- copilot
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
     config = function()
-      require("custom.configs.copilot")
+      require "custom.configs.copilot"
     end,
   },
   {
@@ -63,9 +91,9 @@ local plugins = {
   -- install indent line
   {
     "lukas-reineke/indent-blankline.nvim",
-    config = function ()
-      require("custom.configs.indent")
-    end
+    config = function()
+      require "custom.configs.indent"
+    end,
   },
   -- To make a plugin not be loaded
   -- {
