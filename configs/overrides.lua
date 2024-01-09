@@ -69,8 +69,6 @@ M.nvterm = {
         -- border = "single",
         border = "double",
       },
-      horizontal = { location = "rightbelow", split_ratio = .3, },
-      vertical = { location = "rightbelow", split_ratio = .5 },
     }
   },
   behavior = {

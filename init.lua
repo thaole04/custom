@@ -5,3 +5,6 @@ autocmd("VimResized", {
   pattern = "*",
   command = "tabdo wincmd =",
 })
+
+-- Set scrolloff to 13 
+vim.o.scrolloff = 13

@@ -14,9 +14,9 @@ M.general = {
   v = {
     [">"] = { ">gv", "indent" },
     -- Mapping Alt + Up to line up
-    ["<A-k>"] = { ":m '<-2<CR>gv=gv", "move line up" },
+    ["<C-k>"] = { ":m '<-2<CR>gv=gv", "move line up" },
     -- Mapping Alt + Down to line Down
-    ["<A-j>"] = { ":m '>+1<CR>gv=gv", "move line up" },
+    ["<C-j>"] = { ":m '>+1<CR>gv=gv", "move line up" },
   },
 }
 
